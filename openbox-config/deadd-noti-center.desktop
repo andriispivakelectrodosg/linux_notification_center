@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Notification Center
+Comment=Toggle notification center panel
+Exec=toggle-noti-center.sh
+Icon=preferences-system-notifications
+Terminal=false
+Categories=Utility;

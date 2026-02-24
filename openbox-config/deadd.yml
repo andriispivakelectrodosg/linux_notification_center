@@ -1,0 +1,52 @@
+# deadd-notification-center configuration
+# Docs: https://github.com/phuhl/linux_notification_center
+
+# Command run at startup (e.g. for setting theme)
+startup-command: ""
+
+notification-center:
+  margin-top: 0
+  margin-bottom: 0
+  margin-right: 0
+  width: 420
+  monitor: 0
+  follow-mouse: false
+  new-first: true
+  hide-on-mouse-leave: true
+  ignore-transient: false
+  buttons:
+    buttons-per-row: 3
+    buttons-height: 60
+    buttons-margin: 2
+    actions:
+      - label: "Clear All"
+        command: "none"
+
+notification:
+  use-markup: true
+  use-action-icons: true
+  parse-html-entities: true
+  dbus:
+    send-noti-closed: false
+  app-icon:
+    guess-icon-from-name: true
+    icon-size: 20
+  image:
+    size: 100
+    margin-top: 15
+    margin-left: 15
+    margin-bottom: 15
+    margin-right: 0
+  popup:
+    default-timeout: 10000
+    margin-top: 40
+    margin-right: 15
+    margin-between: 10
+    width: 380
+    max-lines-in-body: 5
+    monitor: 0
+    follow-mouse: false
+    hide-body-if-empty: false
+    click-behavior:
+      dismiss: "mouse1"
+      default-action: "mouse3"
